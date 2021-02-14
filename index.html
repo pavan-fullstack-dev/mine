@@ -1,0 +1,76 @@
+<html>
+
+<head>
+   <style>
+       label{
+           color: pink;
+           text-align: center;
+           font-size: 30px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           
+       }
+       p{
+           color: cyan;
+           font-size: larger;
+           
+       }
+       body{
+           
+           background-image: url(https://wallpapercave.com/wp/wp2655733.jpg);
+           background-repeat: no-repeat;
+           
+           height: 600;
+           width: 300;
+           background-size: 50%;
+       }
+       button{
+           border-radius: 10px;
+           color: orangered;
+           background-color: black;
+
+       }
+       input{
+           width: 200px;
+           border-radius: 20px;
+       }
+       span{
+           color: palevioletred;
+           font-size: larger;
+       }
+
+       
+
+   </style>
+</head>
+<body>
+    <meta name="viewport"
+    content="width=device-width, initial scale=1.0">
+
+    <label> Love you ra Chinni
+    Happy valentines day raa</label><br><br>
+    <button onclick="pavan()">Click here</button><br>
+    <p id="show"></p>
+    Enter your name:<input type="text" id="name1" placeholder="Chinni"><br>
+    Enter your soulmate name:<input type="text" id="name2" placeholder="Nani"><br>
+    <button onclick="chinni()">Love</button><br><br>
+    <span id="show2"></span>
+    <script>
+        function pavan(){
+            event.preventDefault();
+           var p = "When I tell you I love You. Iam not saying it out of habit.Iam remembering you that you are my life. Once again love you ra Bangaram"
+     
+           var p= document.getElementById("show").innerHTML=p;
+            console.log(p);
+        }
+        function chinni(){
+            event.preventDefault();
+            var name1=document.getElementById("name1").value;
+            var name2=document.getElementById("name2").value;
+            document.getElementById("show2").innerHTML=name2+"  Loves you  "+name1+"  so much dont leave them."
+        }
+
+    </script>
+   
+   
+</body>
+</html>
